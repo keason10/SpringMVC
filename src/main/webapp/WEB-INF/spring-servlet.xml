@@ -10,6 +10,10 @@
 
     <import resource="classpath:spring.xml"/>
 
+    <!--防止不让加载js,css 等静态资源-->
+    <!--<mvc:default-servlet-handler/>-->
+    <mvc:resources location="/util/" mapping="/util/**" />
+
 <!--防止中文乱码的-->
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="true">
@@ -32,10 +36,10 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <mvc:interceptors>
-        <mvc:interceptor>
-            <mvc:mapping path="/**"/>
-            <bean class="myController.interceptor.MyFirstInterceptor"/>
-        </mvc:interceptor>
-    </mvc:interceptors>
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<bean class="myController.interceptor.MyFirstInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
 </beans>

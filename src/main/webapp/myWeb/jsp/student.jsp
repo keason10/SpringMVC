@@ -2,10 +2,15 @@
 <html>
 <head>
     <title>登录成功</title>
-    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/util/base.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/util/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/util/ext-all.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/util/ext-lang-zh_CN.js"></script>
+    <link  href="${pageContext.request.contextPath}/util/css/ext-theme-classic-all.css" rel="stylesheet"/>
     <script type="text/javascript">
         $(document).ready(function () {
             $("#showData").click(function () {
+                Ext.MessageBox.alert('title','message');
                $.post({
                    url:'/controller/student/data/list',
                    data:{},
