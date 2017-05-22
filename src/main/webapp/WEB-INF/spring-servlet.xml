@@ -36,10 +36,10 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--<mvc:interceptors>-->
-        <!--<mvc:interceptor>-->
-            <!--<mvc:mapping path="/**"/>-->
-            <!--<bean class="myController.interceptor.MyFirstInterceptor"/>-->
-        <!--</mvc:interceptor>-->
-    <!--</mvc:interceptors>-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="myController.interceptor.MyFirstInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>

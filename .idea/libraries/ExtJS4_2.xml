@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="ExtJS4.2" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="ExtJS 4.2" />
+      <option name="frameworkVersion" value="ExtJS4.2" />
+    </properties>
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
