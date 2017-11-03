@@ -31,7 +31,7 @@ public class DataStorage {
     }
 
     private  static Map<Long,StudentInfo> getMap() {
-        Map<Long,StudentInfo> map = new HashMap<>();
+        Map<Long,StudentInfo> map = new HashMap<Long,StudentInfo>();
         for (StudentInfo info:list){
             map.put(info.getId(),info);
         }
