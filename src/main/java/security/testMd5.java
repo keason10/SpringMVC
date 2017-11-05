@@ -17,6 +17,7 @@ public class testMd5 {
 
         //16 进制字符串，转化为2进制，再转化为16进制，字符串，校验算法正确性。
         System.out.println(byte2hex(hex2bytes("22bd33d4c72d1986ccb4227ff7f1e726")));
+
     }
 
 }

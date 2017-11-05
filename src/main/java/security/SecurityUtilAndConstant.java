@@ -68,7 +68,7 @@ public class SecurityUtilAndConstant {
         return msg;
     }
 
-    public static byte[] base64Byte(String base64) throws IOException {
+    public static byte[] base624Byte(String base64) throws IOException {
         BASE64Decoder base64Decoder = new BASE64Decoder();
         byte [] bytes = base64Decoder.decodeBuffer(base64);
         return bytes;
